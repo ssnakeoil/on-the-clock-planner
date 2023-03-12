@@ -25,15 +25,15 @@ $(function () {
   // current hour in 24-hour time?
   //
   function timeBlocker() {
-    var currentHour = dayjs().hour();
+    var currentHour = dayjs().hour(); //gets current hour
     $(".time-block").each(function () {
       var blockHour = parseInt($(this).attr("id").split("-")[1]); //split the id and get the second part of the array
-      if (blockHour < currentHour) {
+      if (blockHour < currentHour) {//block hour is less than current hour
         $(this).addClass("past");
       } else if (blockHour === currentHour) {
         $(this).removeClass("past");
         $(this).addClass("present");
-      } else {
+      } else { //all other conditions would be future
         $(this).removeClass("past");
         $(this).removeClass("present");
         $(this).addClass("future");
