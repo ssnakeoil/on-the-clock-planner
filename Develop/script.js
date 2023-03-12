@@ -41,15 +41,10 @@ $(function () {
   // the values of the corresponding textarea elements. HINT: How can the id
   // attribute of each time-block be used to do this?
   //
-  $("#hour-9 .description").val(localStorage.getItem("hour-9"));
-  $("#hour-10 .description").val(localStorage.getItem("hour-10"));
-  $("#hour-11 .description").val(localStorage.getItem("hour-11"));
-  $("#hour-12 .description").val(localStorage.getItem("hour-12"));
-  $("#hour-13 .description").val(localStorage.getItem("hour-13"));
-  $("#hour-14 .description").val(localStorage.getItem("hour-14"));
-  $("#hour-15 .description").val(localStorage.getItem("hour-15"));
-  $("#hour-16 .description").val(localStorage.getItem("hour-16"));
-  $("#hour-17 .description").val(localStorage.getItem("hour-17"));
+  for (var i = 9; i < 18; i++) {
+    var text = localStorage.getItem("hour-" + i);
+    $("#hour-" + i + " .description").val(text);
+  }
   timeBlocker();
   
   // TODO: Add code to display the current date in the header of the page.
