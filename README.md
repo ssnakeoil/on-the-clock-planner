@@ -8,7 +8,7 @@ This app uses Day.js to grab the current time from your machine.
 
 ## Installation
 
-Link to the application [here](https://ssnakeoil.github.io/on-the-clock-planner/)!
+Link to the application [here](https://ssnakeoil.github.io/on-the-clock-planner/Develop/index.html)!
 
 The following animation demonstrates the application functionality:
 
